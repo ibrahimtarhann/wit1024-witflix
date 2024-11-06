@@ -70,6 +70,13 @@ header .user-panel {
 header .user-panel img {
   border-radius: 100px;
   width: 2.5rem;
+  /*burger menüsünü gizleyecek*/
+}
+
+/*burger menüsünü gizleyecek*/
+.na
+/*burger menüsünü gizleyecek*/v-menu {
+  display: none;
 }
 
 /* hero */
@@ -152,6 +159,7 @@ button i {
 
 .movie-card {
   border: 1px solid black;
+  /*min width: 250px; scrrol olduğunda width yerine min-width olacak*/
   width: 250px;
   border-radius: 0.5rem;
   padding: 2rem 1rem;
@@ -217,4 +225,40 @@ footer h5 {
 .mobile-app-navigation img {
   height: 2rem;
   border-radius: 0.5rem;
+}
+
+/* ekran küçüldüğü zaman olacak reaksiyonlar. Örneğin   header kısmında WİTFLİX ve serach bölümü kalacak,nav tagları aşağı inecek */
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  /*Ekran küçüldüğünde header'daki nav linkleri görünmeyeccek.*/
+  header nav {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .main-movie {
+    width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer nav {
+    justify-content: center;
+  }
 }
