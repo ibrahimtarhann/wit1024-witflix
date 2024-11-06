@@ -183,3 +183,38 @@ button i {
   margin-left: -0.8rem;
   margin-right: 0.3rem;
 }
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer h5 {
+  margin-top: 0;
+}
+
+.footer-navigation nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-navigation nav a {
+  color: rgb(111, 111, 111);
+  text-decoration: none;
+}
+
+.social-navigation {
+  min-width: 120px;
+}
+
+.mobile-app-navigation {
+  min-width: 230px;
+}
+
+.mobile-app-navigation img {
+  height: 2rem;
+  border-radius: 0.5rem;
+}
