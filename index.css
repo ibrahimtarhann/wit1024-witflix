@@ -2,6 +2,12 @@ body {
   padding: 1rem;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("assets/images/netflix-body.jpg");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
 }
 
 a:hover {
@@ -12,6 +18,7 @@ h2,
 h4 {
   /*h2 ve h4'leri büyük harf yaoar*/
   text-transform: uppercase;
+  color: rgb(221, 138, 138);
 }
 
 header {
@@ -65,6 +72,7 @@ header .user-panel {
 /* arama imgesini inputun içine koyuyor. */
 .search-icon {
   margin-left: -2.2rem;
+  color: black;
 }
 
 header .user-panel img {
@@ -83,11 +91,23 @@ header .user-panel img {
 
 main {
   aspect-ratio: 5/3;
-  border: 1px solid black;
+  border: 1px solid rgb(107, 106, 106);
   margin: 2rem auto;
   padding: 1rem;
   display: flex;
   align-items: center;
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/oblivion.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
 }
 
 .user-rating i {
@@ -95,14 +115,14 @@ main {
 }
 
 .content-rating {
-  border: 1px solid black;
+  border: 1px solid rgb(107, 106, 106);
   border-radius: 0.3rem;
   padding: 0.2rem;
   margin: 0.5rem;
 }
 
 .main-movie {
-  width: 70%;
+  width: 60%;
 }
 
 .movie-details span {
@@ -154,17 +174,128 @@ button i {
 
 .suggestion-movies {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
+  border: 2px solid rgb(107, 106, 106);
+  overflow-x: scroll;
+  scrollbar-color: rgb(141, 139, 139) rgb(49, 23, 23);
 }
 
 .movie-card {
   border: 1px solid black;
   /*min width: 250px; scrrol olduğunda width yerine min-width olacak*/
-  width: 250px;
+  min-width: 250px;
   border-radius: 0.5rem;
   padding: 2rem 1rem;
+  margin: 20px;
   display: flex;
   align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+}
+
+.movie-card-game-of-thrones {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/Game-Of-Thrones.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+}
+
+.movie-card-vikings {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/netflix-vikings.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+}
+
+.movie-card-the-walking-dead {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/the-walking-dead.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+}
+
+.movie-card-rebel-ridge {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/rebel-ridge.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+}
+
+.movie-card-in-time {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/in-time.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+}
+
+.movie-card-the-worst-witch {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/the-worst-witch.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+}
+
+.movie-card-wrong-turn {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(107, 106, 106);
+  background-image: url("assets/images/wrong-turn.png");
+  background-repeat: no-repeat;
+  background-repeat: center center;
+  background-size: cover;
 }
 
 .movie-card h4 {
@@ -199,6 +330,9 @@ footer {
   justify-content: space-between;
   gap: 1rem;
 }
+.footer-navigation p {
+  width: 65%;
+}
 
 footer h5 {
   margin-top: 0;
@@ -212,6 +346,10 @@ footer h5 {
 .footer-navigation nav a {
   color: rgb(111, 111, 111);
   text-decoration: none;
+}
+
+.footer-navigation nav a:hover {
+  color: red;
 }
 
 .social-navigation {
