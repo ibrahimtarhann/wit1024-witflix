@@ -4,8 +4,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("assets/images/netflix-body.jpg");
   background-repeat: no-repeat;
-  background-repeat: center center;
+
+  /*resmi tüm body'e sığdırıyor.*/
   background-attachment: fixed;
+
+  /*yanlarda kalan boşlukları resim ile dolduruyor.*/
   background-size: cover;
   color: white;
 }
@@ -14,11 +17,13 @@ a:hover {
   color: red;
 }
 
-h2,
+h2 {
+  color: rgb(221, 138, 138);
+}
 h4 {
   /*h2 ve h4'leri büyük harf yaoar*/
   text-transform: uppercase;
-  color: rgb(221, 138, 138);
+  color: white;
 }
 
 header {
@@ -92,21 +97,16 @@ header .user-panel img {
 main {
   aspect-ratio: 5/3;
   border: 1px solid rgb(107, 106, 106);
-  margin: 2rem auto;
-  padding: 1rem;
   display: flex;
-  align-items: center;
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 20px;
-  display: flex;
   align-items: center;
-  border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/oblivion.png");
+
+  /*resmi tüm alana sığdırıyoruz.*/
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
@@ -122,7 +122,7 @@ main {
 }
 
 .main-movie {
-  width: 60%;
+  width: 65%;
 }
 
 .movie-details span {
@@ -182,7 +182,6 @@ button i {
 }
 
 .movie-card {
-  border: 1px solid black;
   /*min width: 250px; scrrol olduğunda width yerine min-width olacak*/
   min-width: 250px;
   border-radius: 0.5rem;
@@ -194,7 +193,6 @@ button i {
 }
 
 .movie-card-game-of-thrones {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -204,12 +202,10 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/Game-Of-Thrones.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
 .movie-card-vikings {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -219,12 +215,10 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/netflix-vikings.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
 .movie-card-the-walking-dead {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -234,12 +228,10 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/the-walking-dead.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
 .movie-card-rebel-ridge {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -249,12 +241,10 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/rebel-ridge.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
 .movie-card-in-time {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -264,12 +254,10 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/in-time.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
 .movie-card-the-worst-witch {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -279,12 +267,10 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/the-worst-witch.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
 .movie-card-wrong-turn {
-  border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -294,7 +280,6 @@ button i {
   border: 1px solid rgb(107, 106, 106);
   background-image: url("assets/images/wrong-turn.png");
   background-repeat: no-repeat;
-  background-repeat: center center;
   background-size: cover;
 }
 
